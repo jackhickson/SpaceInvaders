@@ -134,7 +134,7 @@ public class SpaceInvaders extends SimpleApplication{
                 CollisionResults results = new CollisionResults();
                 spatial.collideWith(geo, results);
                 if (results.size() > 0)
-                    direction *= -1;
+                    direction = -1;
             }
         }
         enemyNode.move(.5f*direction, 0 , 0);
